@@ -1,5 +1,5 @@
 # this was my current python version. May need to be adjusted at later time as dependencies are added
-FROM python:3.8.5
+FROM python:3.7.8
 
 
 # set the working directory to app
@@ -12,4 +12,4 @@ ADD . /app
 RUN pip install -r requirements.txt
 
 # run the command to start uWSGI
-CMD ["uwsgi", "app.ini"]
+CMD ["uwsgi", "app.ini"
