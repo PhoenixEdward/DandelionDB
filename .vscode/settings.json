@@ -1,3 +1,6 @@
 {
-    "python.pythonPath": "/home/cestra/.pyenv/versions/3.7.8/bin/python3"
+    "python.pythonPath": "/home/cestra/.local/share/virtualenvs/flask-sZr6Cdt0/bin/python3",
+    "python.linting.pylintEnabled": false,
+    "python.linting.mypyEnabled": true,
+    "python.linting.enabled": true
 }

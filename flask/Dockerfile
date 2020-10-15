@@ -8,8 +8,11 @@ WORKDIR /app
 # copy the current directory contents into the container at /app
 ADD . /app
 
-# install python dependencies
-RUN pip install -r requirements.txt
+# install pipenv
+RUN pip install pipenv
+
+# use pipenv to install python dependencies
+RUN pipenv install --system --deploy
 
 # run the command to start uWSGI
-CMD ["uwsgi", "app.ini"
+CMD ["uwsgi", "app.ini"]
